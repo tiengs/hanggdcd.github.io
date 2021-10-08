@@ -1,0 +1,559 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hang-Gdcd</title>
+    <style>
+        .btn {
+            background:green;
+            color:yellow;
+            height:40px;
+            width:300px;
+            margin:auto;
+            display:block;
+        }
+
+        .tieude {
+            background:lightgreen; 
+
+        }
+        p {
+        font-size: 14pt;
+    
+        }
+        .bdy {
+            background:#f7e6cd;
+
+        }
+        .f-grid {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 1rem;
+            flex-flow: row wrap;
+        }
+        
+        .f-grid-col {
+            flex: 3 0;
+            background-color: rgba(184,245,114,0.883);
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
+
+        }
+    </style>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>  
+        <script>
+    function sendEmail(ndtext) {
+            Email.send({
+                SecureToken : "08e9c867-da6a-40b1-9a11-575e4c98a308",
+                To : 'tiensg89@gmail.com',
+                From : "mrtien89@outlook.com",
+                Subject : "Ket qua lam bai:",
+                Body : ndtext
+            }).then(
+            message => alert(message+'. Kết quả đã được gửi.')
+            );
+        }
+        </script>
+    </head>
+    <body class="bdy">
+  {% extends "template.html" %}
+  {% block content %}
+
+    <form name="myform">
+
+    <div class="tieude">
+        <hr>
+        <h2>Trắc Nghiệm GDCD Thi TN THPT (1):</h2>
+
+            <table>
+                <tr>
+                    <th><label for="lname">Trường :</label></th>
+                    <th><input type="text" id="tname" name="tname" value="NTP"></th>
+                </tr>
+                <tr>
+                    <th><label for="lname">Lớp :</label></th>
+                    <th><input type="text" id="lname" name="lname" value="12A1"></th>
+                </tr>
+                <tr>
+                    <th><label for="fname">Họ và tên học sinh làm bài :</label></th>
+                    <th><input type="text" id="sname" name="sname" value="Tien"></th>
+                </tr>
+            </table>
+        
+        <br>
+
+    </div>    
+        <hr>
+
+        <p><span style="color:blue">Câu 1:</span> Pháp luật về sự phát triển kinh tế quy định khi tiến hành hoạt động kinh doanh mọi công dân đều phải<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_1" value="C.";> sa thải lao động thời vụ .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_1" value="B.";> tuyển dụng nhân sự trực tuyến .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_1" value="A.";> sử dụng nguyên liệu hữu cơ .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_1" value="D._";> tuân thủ quy định về an ninh .
+</div>
+</div><p><span style="color:blue">Câu 2:</span> Thôn X có ông C ; vợ chồng anh B , chị P ; vợ chồng chị Y , anh A và con gái là <br>cháu M cùng sinh sống . Vốn có định kiến từ trước nên khi thấy chị P vào nhà mình , <br>chị cho rằng chị P có mục đích xấu nên đã tri hô và hỗ trợ anh A đánh đuổi chị P. <br>Sau đó ít lâu , bị chị P đưa tin sai sự thật về mình , anh đã bí mật giam chị tại một ngôi nhà <br>hoang . Qua hai ngày chị P mất tích , anh B phát hiện sự việc nên đã thuê ông C dùng hung khí <br>đe dọa giết anh A buộc anh A phải thả vợ mình . <br>Khi bác sĩ yêu cầu chị P phải nằm viện điều trị do bị sang chấn tâm lí , anh B bắt cháu M <br>rồi quay và gửi video cảnh cháu ngất xỉu do bị bỏ đói cho anh A để gây sức ép yêu cầu anh A <br>phải trả tiền viện phí cho vợ mình . <br>Những ai sau đây đồng thời vi phạm quyền bất khả xâm phạm về thân thể và quyền được pháp luật <br>bảo hộ về tính mạng , sức khỏe của công dân ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_2" value="D.";> Anh B và chị Y
+</div>
+<div class="f-grid-col"><input type="radio" name="question_2" value="B.";> Ông C , chị P và anh A
+</div>
+<div class="f-grid-col"><input type="radio" name="question_2" value="C._";> Anh A và anh B
+</div>
+<div class="f-grid-col"><input type="radio" name="question_2" value="A.";> Chị Y , anh A và anh B
+</div>
+</div><p><span style="color:blue">Câu 3:</span> Các anh N , X , G cùng làm việc tại một công trường . Mặc dù bị bà Y ép giá , <br>anh G vẫn kí hợp đồng thuê ngôi nhà bỏ không của bà Y trong thời hạn hai năm làm nơi ở . <br>Tại đây , anh bí mật tổ chức kinh doanh thể thao qua mạng và đồng thời nhận cá độ của <br>nhiều người với tổng số tiền là 1 tỉ đồng . <br>Nghe anh G tư vấn , anh N lấy lí do phải chữa bệnh để vay 150 triệu đồng của anh K rồi dùng <br>số tiền này cá độ bóng đá và bị thua . <br>Liên tục bị anh N tránh mặt với mục đích trốn nợ , anh X đã tạt sơn làm bẩn tường nhà anh N. <br>Trong khi đó , do quá hạn ba tháng mà không nhận được tiền cho thuê nhà , cũng không liên lạc <br>được với anh G , bà Y đã làm đơn tố cáo . <br>Những ai sau đây vừa phải chịu trách nhiệm hình sự vừa phải chịu trách nhiệm dân sự ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_3" value="A.";> Anh N và anh X
+</div>
+<div class="f-grid-col"><input type="radio" name="question_3" value="D.";> Anh G , anh X và bà Y
+</div>
+<div class="f-grid-col"><input type="radio" name="question_3" value="B._";> Anh N và anh G
+</div>
+<div class="f-grid-col"><input type="radio" name="question_3" value="C.";> Anh G , anh N và anh X
+</div>
+</div><p><span style="color:blue">Câu 4:</span> Theo quy định của pháp luật , công dân xâm phạm quyền được pháp luật bảo hộ về danh dự <br>và nhân phẩm khi thực hiện hành vi nào sau đây đối với người khác ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_4" value="A.";> Đề cao quan điểm cá nhân ,
+</div>
+<div class="f-grid-col"><input type="radio" name="question_4" value="B.";> Từ chối tham gia hòa giải .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_4" value="D._";> Lan truyền thông tin sai lệch .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_4" value="C.";> Thẳng thắn đấu tranh phê bình .
+</div>
+</div><p><span style="color:blue">Câu 5:</span> Chính quyền địa phương Y thường xuyên tổ chức các hoạt động tuyên truyền , <br>giáo dục về việc thực hiện thông điệp SK của Bộ Y tế và chia sẻ kinh nghiệm phòng , <br>chống dịch COVID - 19 cho người dân . Chính quyền địa phương Y đã tạo điều kiện để công dân <br>hưởng quyền được phát triển ở nội dung nào sau đây ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_5" value="D.";> Đẩy lùi mọi bệnh tật hiểm nghèo ,
+</div>
+<div class="f-grid-col"><input type="radio" name="question_5" value="B._";> Được cung cấp thông tin .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_5" value="C.";> Bảo mật nguồn dữ liệu .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_5" value="A.";> Chủ động đầu cơ nhu yếu phẩm .
+</div>
+</div><p><span style="color:blue">Câu 6:</span> Công dân báo cho cơ quan có thẩm quyền biết về hành vi vi phạm pháp luật của bất cứ tổ chức nào là thực hiện quyền<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_6" value="C.";> phán quyết .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_6" value="A.";> khiếu nại .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_6" value="B._";> tổ cáo .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_6" value="D.";> truy xuất .
+</div>
+</div><p><span style="color:blue">Câu 7:</span> Cá nhân , tổ chức không làm những điều pháp luật cấm là<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_7" value="D._";> tuân thủ pháp luật .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_7" value="A.";> xây dựng pháp luật .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_7" value="B.";> phổ cập pháp luật .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_7" value="C.";> ban hành pháp luật .
+</div>
+</div><p><span style="color:blue">Câu 8:</span> Việc áp dụng những quy tắc xử sự chung nhiều lần , ở nhiều nơi , đối với tất cả mọi người trong mọi lĩnh vực của đời sống xã hội là pháp luật thể hiện tính<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_8" value="A.";> độc đoán chuyên quyền
+</div>
+<div class="f-grid-col"><input type="radio" name="question_8" value="C._";> quy phạm phổ biến .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_8" value="B.";> trấn áp bạo lực .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_8" value="D.";> bảo mật tuyệt đối .
+</div>
+</div><p><span style="color:blue">Câu 9:</span> Quyền bình đẳng giữa các dân tộc được hiểu là các dân tộc cùng sinh sống trên lãnh thổ Việt Nam được Nhà nước và pháp luật<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_9" value="C.";> hợp nhất .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_9" value="A._";> bảo vệ.
+</div>
+<div class="f-grid-col"><input type="radio" name="question_9" value="B.";> hoán đổi .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_9" value="D.";> phân cấp .
+</div>
+</div><p><span style="color:blue">Câu 10:</span> Công dân thi hành pháp luật khi thực hiện hành vi nào sau đây ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_10" value="B.";> Ủng hộ quỹ vacxin phòng dịch .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_10" value="D.";> Chủ động chia sẻ kĩ năng mềm .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_10" value="C._";> Khai báo hồ sơ dịch tễ.
+</div>
+<div class="f-grid-col"><input type="radio" name="question_10" value="A.";> Từ chối trợ giúp pháp lý .
+</div>
+</div><p><span style="color:blue">Câu 11:</span> Theo quy định của pháp luật , công dân thực hiện hành vi đe dọa giết người là xâm phạm quyền được pháp luật bảo hộ về<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_11" value="C.";> tư cách pháp nhân .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_11" value="D._";> tính mạng , sức khỏe .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_11" value="A.";> thân thế , sự nghiệp .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_11" value="B.";> hoàn cảnh xuất thân .
+</div>
+</div><p><span style="color:blue">Câu 12:</span> Một trong những nội dung của bình đẳng trong kinh doanh là mọi chủ thể kinh tế khi tiến hành hoạt động kinh doanh đều được<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_12" value="C.";> quyết toán ngân sách quốc gia .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_12" value="A._";> chủ động tìm kiếm thị trường .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_12" value="D.";> thu hồi trái phiếu chính phủ .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_12" value="B.";> từ chối hoạt động kiểm toán .
+</div>
+</div><p><span style="color:blue">Câu 13:</span> Theo quy định của pháp luật , việc kiểm soát thư tín , điện tín của cá nhân được thực hiện khi có quyết định của<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_13" value="D.";> người làm công tác truyền thông
+</div>
+<div class="f-grid-col"><input type="radio" name="question_13" value="C._";> cơ quan nhà nước có thẩm quyền .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_13" value="A.";> lực lượng tìm kiếm và cứu nạn .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_13" value="B.";> đội ngũ phóng viên báo chí .
+</div>
+</div><p><span style="color:blue">Câu 14:</span> Người đủ năng lực trách nhiệm pháp lý theo quy định của pháp luật có hành vi vi phạm pháp luật , xâm phạm quan hệ tài sản phải<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_14" value="C.";> tự cách li cộng đồng .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_14" value="D.";> chấm dứt quyền nhân thân .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_14" value="A.";> hủy bỏ mọi giao dịch .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_14" value="B._";> chịu trách nhiệm dân sự .
+</div>
+</div><p><span style="color:blue">Câu 15:</span> Theo quy định của pháp luật , công dân không được thực hiện quyền bầu cử đại biểu Hội đồng nhân dân các cấp khi đang<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_15" value="A.";> tham gia công tác biệt phái .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_15" value="C.";> thực hiện cách li y tế .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_15" value="D._";> chấp hành hình phạt tù .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_15" value="B.";> bí mật theo dõi nhân chứng .
+</div>
+</div><p><span style="color:blue">Câu 16:</span> Công dân thực hiện quyền học thường xuyên , học suốt đời trong trường hợp nào sau đây ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_16" value="B.";> Bác bỏ giáo dục truyền thống .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_16" value="C.";> Bảo mật quan điểm cá nhân .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_16" value="A.";> Từ chối hoạt động hướng nghiệp .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_16" value="D._";> Định kì bồi dưỡng chuyên môn .
+</div>
+</div><p><span style="color:blue">Câu 17:</span> Theo quy định của pháp luật , lao động nam và lao động nữ được bình đẳng về cơ hội<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_17" value="B.";> cân bằng giới tính .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_17" value="C.";> duy trì lạm phát .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_17" value="D._";> tiếp cận việc làm .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_17" value="A.";> thôn tỉnh thị trường .
+</div>
+</div><p><span style="color:blue">Câu 18:</span> Người đủ năng lực trách nhiệm pháp lí theo quy định của pháp luật vi phạm pháp luật<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_18" value="D.";> Từ chối việc thử nghiệm vacxin .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_18" value="A.";> Cố  ý giao hàng sai địa điểm .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_18" value="B.";> Gây mất trật tự tại đơn vị
+</div>
+<div class="f-grid-col"><input type="radio" name="question_18" value="C._";> Tổ chức cho tù nhân vượt ngục ,
+</div>
+</div><p><span style="color:blue">Câu 19:</span> Cùng với việc sử dụng tiếng phổ thông , các dân tộc sinh sống trên lĩnh thổ Việt Nam <br>được Nhà nước cho phép sử dụng tiếng nói , chữ viết riêng của mình là bảo đảm quyền bình đẳng <br>giữa cá dân tộc ở phương diện nào sau đây ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_19" value="C._";> Văn hóa ,
+</div>
+<div class="f-grid-col"><input type="radio" name="question_19" value="D.";> An ninh .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_19" value="B.";> Chính trị .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_19" value="A.";> Quốc phòng ,
+</div>
+</div><p><span style="color:blue">Câu 20:</span> Sau khi cùng tốt nghiệp đại học , anh B về quê nhà được chính quyền <br>địa phương hỗ trợ kinh phí thực hiện dự án phục dụng các trò chơi dân gian của dân tộc mình ; <br>anh A được vay vốn ưu đãi để phát triển công ty của gia đình tại thành phố nơi anh đã sinh ra . <br>Anh B và anh A được hưởng quyền bình đẳng giữa các dân tộc ở phương diện nào sau đây ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_20" value="C.";> Chính trị .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_20" value="D.";> Văn hóa ,
+</div>
+<div class="f-grid-col"><input type="radio" name="question_20" value="B._";> Kinh tế ,
+</div>
+<div class="f-grid-col"><input type="radio" name="question_20" value="A.";> Tín ngưỡng .
+</div>
+</div><p><span style="color:blue">Câu 21:</span> Nghi ngờ anh V tổ chức cho người nhập cảnh trái phép , ông M là công an viên đã đến nhà <br>anh đưa giấy triệu tập , sau đó cùng anh V về trụ sở công an để lấy lời khai . <br>Mặc dù anh V đã cung cấp bằng chúng ngoại phạm nhưng ông M vẫn ép buộc anh V phải ở tại trụ sở <br>hai ngày để phục vụ công tác điều tra . <br>Ông M đã vi phạm quyền nào sau đây của công dân ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_21" value="C.";> Bất khả xâm phạm về chỗ ở .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_21" value="D.";> Được pháp luật bảo hộ về danh tính .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_21" value="B._";> Bất khả xâm phạm về thân thể .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_21" value="A.";> Được pháp luật bảo hộ về thông tin .
+</div>
+</div><p><span style="color:blue">Câu 22:</span> Công dân đóng góp ý kiến để Nhà nước sửa đổi và hoàn thiện các chính sách , pháp luật là thực hiện quyền tham gia quản lý nhà nước và xã hội ở phạm vi<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_22" value="D.";> địa phương .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_22" value="B.";> đặc khu .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_22" value="A.";> cơ sở .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_22" value="C._";> cả nước .
+</div>
+</div><p><span style="color:blue">Câu 23:</span> Việc Tòa án tuyên phạt tù anh A là lao động tự do và ông G là giám đốc một doanh nghiệp <br>hành vi vận chuyển trái phép chất ma túy là thể hiện đặc trưng nào sau đây của pháp luật ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_23" value="D.";> Tính trấn áp , dùng vũ lực .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_23" value="B.";> Tính đặc thù , được bảo mật .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_23" value="A.";> Tính chủ động , tự phán quyết ,
+</div>
+<div class="f-grid-col"><input type="radio" name="question_23" value="C._";> Tính quyền lực , bắt buộc chung .
+</div>
+</div><p><span style="color:blue">Câu 24:</span> Tại một điểm bầu cử đại biểu Hội đồng nhân dân các cấp , ông A là cán bộ hưu trí H nhờ vả <br>chị B kiểm tra lại thông tin trong phiếu bầu mà anh C vừa viết hộ theo ý của ông . <br>Sau đó , người tự tay bỏ phiếu của mình vào hòm phiếu rồi ra về . <br>Ông A vì chị B cùng vi phạm nguyên tắc bầu cử nào sau đây<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_24" value="D.";> Trực tiếp
+</div>
+<div class="f-grid-col"><input type="radio" name="question_24" value="A.";> Cùng hợp tác .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_24" value="B._";> Bỏ phiếu kín .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_24" value="C.";> Công khai .
+</div>
+</div><p><span style="color:blue">Câu 25:</span> Hành vi vi phạm pháp luật xâm phạm các quan hệ lao động , công vụ nhà nước là vi phạm<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_25" value="B._";> kỉ luật .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_25" value="C.";> công hàm .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_25" value="D.";> hương ước .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_25" value="A.";> hiệp định .
+</div>
+</div><p><span style="color:blue">Câu 26:</span> Một trong những nội dung của bình đẳng trong hôn nhân và gia đình là vợ , chồng có quyền và nghĩa vụ ngang nhau trong việc<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_26" value="A.";> sử dụng , đề cao bạo lực .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_26" value="D.";> sàng lọc , cân bằng giới tính .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_26" value="C.";> lựa chọn , áp đặt nghề nghiệp .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_26" value="B._";> nuôi dưỡng , giáo dục các con .
+</div>
+</div><p><span style="color:blue">Câu 27:</span> Một trong những nội dung của quyền được phát triển là mọi công dân đều được<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_27" value="C.";> đầu cơ nhu yếu phẩm.
+</div>
+<div class="f-grid-col"><input type="radio" name="question_27" value="B._";> chăm sóc sức khỏe ban đầu.
+</div>
+<div class="f-grid-col"><input type="radio" name="question_27" value="D.";> thưởng phụ cấp độc hại .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_27" value="A.";> cấp thẻ bảo hiểm miễn phí.
+</div>
+</div><p><span style="color:blue">Câu 28:</span> Trong nền kinh tế hàng hóa , tiền tệ không thực hiện chức năng nào sau đây ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_28" value="C.";> Thước đo giá trị
+</div>
+<div class="f-grid-col"><input type="radio" name="question_28" value="B.";> Tiền tệ thế giới .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_28" value="D._";> Triệt tiêu cạnh tranh .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_28" value="A.";> Phương tiện lưu thông .
+</div>
+</div><p><span style="color:blue">Câu 29:</span> Bất kỳ công dân nào khi có đủ điều kiện theo quy định của pháp luật đều được<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_29" value="A.";> sở hữu mọi loại tài nguyên .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_29" value="D._";> hưởng các quyền công dân .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_29" value="B.";> bài trừ văn hóa truyền thống
+</div>
+<div class="f-grid-col"><input type="radio" name="question_29" value="C.";> xóa bỏ tập quán vùng miền .
+</div>
+</div><p><span style="color:blue">Câu 30:</span> Anh B là Chi cục trưởng Chi cục X chở chị H là nhân viên đi công tác bằng xe mô tô , <br>Trên đường đi , anh B đã vượt đèn đỏ nên bị anh M là cảnh sát giao thông yêu cầu dừng xe . <br>Vào thời điểm anh M lập biên bản và quyết định xử phạt anh B ; cách đó không xa , <br>anh D là tài xế xe taxi bị hành khách trên xe là anh C khống chế , dùng dao đâm vào bụng . <br>Sau khi thoát khỏi xe và kêu cứu , anh D ngã gục xuống đường , lợi dụng lúc này , anh C bỏ chạy . <br>Anh M nhờ người đưa anh D đi cấp cứu còn mình thì truy đuổi anh C. <br>Thấy trong quyết định xử phạt anh B có ghi thêm lỗi đi sai làn đường dù anh B không vi phạm , <br>chị H đã đưa sự việc lên mạng xã hội . Không ngờ hành động của chị H khiến việc anh B bị xử phạt <br>lan truyền rộng rãi dẫn đến uy tín của anh B bị ảnh hưởng . Bức xúc , anh B đã tạo tình huống để <br>chị H mắc lỗi nghiêm trọng rồi dựa vào đó thực hiện quy trình kỉ luật và chị H đã phải nhận quyết <br>định buộc thôi việc . Những ai sau đây có thể vừa được thực hiện quyền khiếu nại vừa được thực hiện <br>quyền tố cáo ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_30" value="A.";> Anh M, anh B và anh C
+</div>
+<div class="f-grid-col"><input type="radio" name="question_30" value="B.";> Anh B anh D và chị H
+</div>
+<div class="f-grid-col"><input type="radio" name="question_30" value="D._";> Chị H và anh B
+</div>
+<div class="f-grid-col"><input type="radio" name="question_30" value="C.";> Chị H và anh D
+</div>
+</div><p><span style="color:blue">Câu 31:</span> Khi bàn với chồng là anh M về việc dùng một phần tiền tiết kiệm của hai vợ chồng để <br>ủng hộ quỹ vacxin phòng , chống dịch COVID - 19 , chị P phát hiện anh đã tự ý cho bạn anh <br>vay toàn bộ số tiền tiết kiệm đó . Bức xúc do không lấy lại được số tiền cho vay , <br>chị P bỏ về nhà mẹ đẻ là bà B sinh sống . <br>Vì đang tham gia làm tình nguyện viên tại một khu cách li y tế tập trung nên năm ngày sau <br>bà B mới biết chuyện . Cho rằng con gái mình không được con rể tôn trọng , bà B đến gặp bà H <br>là mẹ anh M đề nghị bà H yêu cầu anh M phải đón chị P về nhà đồng thời công khai xin lỗi chị . <br>Vốn có định kiến với bà B , bà đã lớn tiếng xúc phạm và đuổi bà B ra về . <br>Những ai sau đây vi phạm quyền bình đẳng trong hôn nhân và gia đình ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_31" value="D.";> Bà B và bà H
+</div>
+<div class="f-grid-col"><input type="radio" name="question_31" value="B.";> Anh M , bà H và bà B
+</div>
+<div class="f-grid-col"><input type="radio" name="question_31" value="A.";> Anh M , chị P và bà H
+</div>
+<div class="f-grid-col"><input type="radio" name="question_31" value="C._";> Anh M và chị P
+</div>
+</div><p><span style="color:blue">Câu 32:</span> Hành vi nào sau đây của các chủ thể kinh tế thể hiện mặt tích cực của cạnh tranh <br>trong sản xuất và lưu thông hàng hóa ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_32" value="D._";> Khai thác hiệu quả mọi nguồn lực .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_32" value="C.";> Thôn tính thị trường nội địa ,
+</div>
+<div class="f-grid-col"><input type="radio" name="question_32" value="A.";> Thúc đẩy hiện tượng lạm phát .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_32" value="B.";> Chấm dứt việc luân chuyển tiền tệ .
+</div>
+</div><p><span style="color:blue">Câu 33:</span> Theo quy định của pháp luật , công dân thực hiện quyền tham gia quản lý nhà nước <br>và xã hội phạm vi cả nước khi<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_33" value="C._";> góp ý sửa đổi Hiến pháp .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_33" value="D.";> xây dựng hương ước làng xã .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_33" value="A.";> chia sẻ kinh nghiệm phòng dịch .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_33" value="B.";> né tránh hoạt động biểu tình .
+</div>
+</div><p><span style="color:blue">Câu 34:</span> Theo quy định của pháp luật , lao động nữ là công chức nhà nước có thể thực hiện <br>quyền khiếu nại trong trường hợp nào sau đây ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_34" value="D._";> Bị sa thải khi đang nghỉ thai sản .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_34" value="A.";> Phát hiện hành vi buôn lậu .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_34" value="C.";> Chứng kiến tù nhân vượt ngục .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_34" value="B.";> Bắt gặp người đang nhập cảnh .
+</div>
+</div><p><span style="color:blue">Câu 35:</span> Sự ganh đua , đấu tranh giữa các chủ thể kinh tế trong sản xuất , kinh doanh hàng hóa nhằm giành điều kiện thuận lợi để thu nhiều lợi nhuận là<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_35" value="B.";> đồng thuận.
+</div>
+<div class="f-grid-col"><input type="radio" name="question_35" value="D.";> hội nhập.
+</div>
+<div class="f-grid-col"><input type="radio" name="question_35" value="A._";> cạnh tranh.
+</div>
+<div class="f-grid-col"><input type="radio" name="question_35" value="C.";> hợp nhất.
+</div>
+</div><p><span style="color:blue">Câu 36:</span> Theo quy định của pháp luật , việc khám xét chỗ ở của công dân được tiến hành khi có căn cứ khẳng định chỗ ở của người đó có<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_36" value="A.";> di chúc thừa kế tài sản .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_36" value="D.";> hình ảnh di chỉ khảo cổ .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_36" value="C._";> tài liệu liên quan đến vụ án .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_36" value="B.";> hồ sơ gia phả của dòng họ .
+</div>
+</div><p><span style="color:blue">Câu 37:</span> Anh B là sinh viên một trường đại học điều khiển xe mô tô đi ngược chiều của đường <br>một chiều gây tai nạn làm hỏng xe đạp của chị H đang đi ngược hướng của anh trên phần đường <br>dành cho xe thô sơ . <br>Anh B phải chịu những trách nhiệm pháp lí nào sau đây ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_37" value="D._";> Hành chính và dân sự .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_37" value="A.";> Kỉ luật và dân sự .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_37" value="B.";> Hình sự và dân sự .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_37" value="C.";> Hành chính và hình sự .
+</div>
+</div><p><span style="color:blue">Câu 38:</span> Tăng trưởng kinh tế là sự tăng lên về số lượng , chất lượng sản phẩm và các yếu tố của quá trình<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_38" value="D._";> sản xuất .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_38" value="A.";> lạm phát .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_38" value="C.";> dự phòng .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_38" value="B.";> đầu cơ .
+</div>
+</div><p><span style="color:blue">Câu 39:</span> Một trong những nội dung của quyền sáng tạo là mọi công dân đều được tự do<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_39" value="A._";> tạo ra công trình khoa học .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_39" value="C.";> thâu tóm hoạt động nghiên cứu .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_39" value="D.";> cấp bằng phát minh sáng chế .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_39" value="B.";> hoán đổi bản quyền tác giả .
+</div>
+</div><p><span style="color:blue">Câu 40:</span> Công dân vi phạm quyền tự do ngôn luận khi cố ý thực hiện hành vi nào sau đây ?<br></p><div class="f-grid">
+<div class="f-grid-col"><input type="radio" name="question_40" value="D.";> Trình bày tham luận trong hội nghị .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_40" value="A.";> Phê phán hệ tư tưởng lỗi thời .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_40" value="C.";> Ủy quyền phát ngôn với báo chí .
+</div>
+<div class="f-grid-col"><input type="radio" name="question_40" value="B._";> Phát tán thông tin chưa kiểm chứng .
+</div>
+</div>
+            <br>
+        <hr>
+            <input type="button" class="btn" value="Kết thúc và đồng ý để gửi kết quả đi." onclick="check()">
+
+            </form>
+            <br><br><br><br>    
+            <script type="text/javascript">
+
+
+                function check(){
+                    var q_1=document.myform.question_1.value;
+var q_2=document.myform.question_2.value;
+var q_3=document.myform.question_3.value;
+var q_4=document.myform.question_4.value;
+var q_5=document.myform.question_5.value;
+var q_6=document.myform.question_6.value;
+var q_7=document.myform.question_7.value;
+var q_8=document.myform.question_8.value;
+var q_9=document.myform.question_9.value;
+var q_10=document.myform.question_10.value;
+var q_11=document.myform.question_11.value;
+var q_12=document.myform.question_12.value;
+var q_13=document.myform.question_13.value;
+var q_14=document.myform.question_14.value;
+var q_15=document.myform.question_15.value;
+var q_16=document.myform.question_16.value;
+var q_17=document.myform.question_17.value;
+var q_18=document.myform.question_18.value;
+var q_19=document.myform.question_19.value;
+var q_20=document.myform.question_20.value;
+var q_21=document.myform.question_21.value;
+var q_22=document.myform.question_22.value;
+var q_23=document.myform.question_23.value;
+var q_24=document.myform.question_24.value;
+var q_25=document.myform.question_25.value;
+var q_26=document.myform.question_26.value;
+var q_27=document.myform.question_27.value;
+var q_28=document.myform.question_28.value;
+var q_29=document.myform.question_29.value;
+var q_30=document.myform.question_30.value;
+var q_31=document.myform.question_31.value;
+var q_32=document.myform.question_32.value;
+var q_33=document.myform.question_33.value;
+var q_34=document.myform.question_34.value;
+var q_35=document.myform.question_35.value;
+var q_36=document.myform.question_36.value;
+var q_37=document.myform.question_37.value;
+var q_38=document.myform.question_38.value;
+var q_39=document.myform.question_39.value;
+var q_40=document.myform.question_40.value;
+var count = 0;
+if(q_1=="D._"){count++;}
+if(q_2=="C._"){count++;}
+if(q_3=="B._"){count++;}
+if(q_4=="D._"){count++;}
+if(q_5=="B._"){count++;}
+if(q_6=="B._"){count++;}
+if(q_7=="D._"){count++;}
+if(q_8=="C._"){count++;}
+if(q_9=="A._"){count++;}
+if(q_10=="C._"){count++;}
+if(q_11=="D._"){count++;}
+if(q_12=="A._"){count++;}
+if(q_13=="C._"){count++;}
+if(q_14=="B._"){count++;}
+if(q_15=="D._"){count++;}
+if(q_16=="D._"){count++;}
+if(q_17=="D._"){count++;}
+if(q_18=="C._"){count++;}
+if(q_19=="C._"){count++;}
+if(q_20=="B._"){count++;}
+if(q_21=="B._"){count++;}
+if(q_22=="C._"){count++;}
+if(q_23=="C._"){count++;}
+if(q_24=="B._"){count++;}
+if(q_25=="B._"){count++;}
+if(q_26=="B._"){count++;}
+if(q_27=="B._"){count++;}
+if(q_28=="D._"){count++;}
+if(q_29=="D._"){count++;}
+if(q_30=="D._"){count++;}
+if(q_31=="C._"){count++;}
+if(q_32=="D._"){count++;}
+if(q_33=="C._"){count++;}
+if(q_34=="D._"){count++;}
+if(q_35=="A._"){count++;}
+if(q_36=="C._"){count++;}
+if(q_37=="D._"){count++;}
+if(q_38=="D._"){count++;}
+if(q_39=="A._"){count++;}
+if(q_40=="B._"){count++;}
+var dpt=Math.round(100*count/40);
+
+        var bten=document.myform.sname.value;
+        var blop=document.myform.lname.value;
+        var btruong=document.myform.tname.value;
+        
+var thongbao=bten+" ("+blop+"-"+btruong+") đạt "+String(dpt)+" % điểm.";
+alert("You got " + String(dpt) + "% marks");
+sendEmail(thongbao);
+
+        }
+        </script>            
+    {% endblock %}
+    </body>
+    </html>
+    
